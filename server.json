@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.contentrabbit/content-rabbit",
+  "title": "Content Rabbit",
+  "description": "Manage social media posts, accounts, queues, webhooks, and analytics through Content Rabbit.",
+  "version": "0.1.0",
+  "websiteUrl": "https://contentrabbitai.com",
+  "repository": {
+    "url": "https://github.com/pooriaarab/content-rabbit",
+    "source": "github",
+    "subfolder": "integrations/claude-plugin"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contentrabbitai.com/api/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Content Rabbit API key, sent as a Bearer token.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@contentrabbit/mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

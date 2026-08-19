@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "content-rabbit",
+  "displayName": "Content Rabbit",
+  "version": "0.1.0",
+  "description": "Manage Content Rabbit posts through Claude Code.",
+  "author": {
+    "name": "Content Rabbit"
+  },
+  "homepage": "https://contentrabbitai.com",
+  "repository": "https://github.com/pooriaarab/content-rabbit/tree/main/integrations/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "content-rabbit",
+    "social-media",
+    "mcp"
+  ],
+  "mcpServers": {
+    "content-rabbit": {
+      "type": "http",
+      "url": "https://contentrabbitai.com/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CONTENTRABBIT_API_KEY}"
+      }
+    }
+  }
+}

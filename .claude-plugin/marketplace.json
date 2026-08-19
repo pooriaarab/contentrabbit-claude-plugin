@@ -1,0 +1,15 @@
+{
+  "name": "content-rabbit",
+  "owner": {
+    "name": "Content Rabbit"
+  },
+  "description": "Content Rabbit tools for Claude Code.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "content-rabbit",
+      "source": "./",
+      "description": "Manage Content Rabbit posts through Claude Code."
+    }
+  ]
+}
